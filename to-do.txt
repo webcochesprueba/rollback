@@ -1,0 +1,113 @@
+## SEO Technical Fixes
+- [ ] Reorganize project structure: Move next.config.js and package.json to root, app/ to root/app/, public/ to root/public/, remove duplicate/misplaced files
+- [ ] Implement proper Next.js App Router setup with globals.css, proper TypeScript config, and ES modules
+- [ ] Add missing globals.css file referenced in app/layout.tsx
+- [ ] Configure next.config.js for static optimization: enable output: 'export' for static generation
+- [ ] Add Image component optimization in next.config.js (enable images.unoptimized if using video, add whitelisted domains)
+- [ ] Implement dynamic routing for pages: app/servicios/page.tsx, app/contacto/page.tsx, app/proyectos/page.tsx, app/blog/page.tsx
+- [ ] Add i18n routing system (next-i18n-router) for proper multilanguage URLs with locales (/es, /en, /fr, etc.)
+- [ ] Create app/[locale]/layout.tsx structure for each language with proper metadata
+- [ ] Add proper sitemap generation for all languages and dynamic pages
+- [ ] Implement server-side rendering (SSR) or static site generation (SSG) for all dynamic content
+- [ ] Add missing manifest.json extension in app/manifest - rename to app/manifest.ts or create as .json
+- [ ] Implement error boundaries and 404 pages for better UX and SEO
+
+## Metadata and Schema Fixes
+- [ ] Add comprehensive metadata to app/page.tsx: keywords, canonical, OpenGraph image, Twitter cards, structured data
+- [ ] Create metadata.ts helpers in /lib for generating consistent metadata across all pages
+- [ ] Add business contact information to layout metadata (phone, email in structured data)
+- [ ] Implement ClientBusiness schema with correct NAP info (Name: Refycon, Address: Costa del Sol+Málaga, Phone: +34 613 446 457)
+- [ ] Add Service schema markup for each service offering (ConstructionService, HomeAndConstructionBusiness)
+- [ ] Add FAQPage schema with common questions about construction services
+- [ ] Add Review/Rating schema based on Google Business Profile
+- [ ] Add Organization schema in addition to LocalBusiness
+- [ ] Implement BreadcrumbList schema for better site navigation understanding
+- [ ] Add Product schema for Steel Framing services with aggregateRating
+
+## Content SEO Improvements
+- [ ] Create dedicated service pages: reformas-integrales, obra-nueva, construccion-steel-framing, arquitectura-diseno, servicios-urgencia
+- [ ] Implement location-specific landing pages: costa-del-sol, malaga, marbella, estepona, fuengirola, benalmadena, torremolinos
+- [ ] Develop comprehensive blog section with Construction/Architecture topics for semantic SEO
+- [ ] Add long-tail keyword targeting: "presupuesto reforma integral Costa del Sol", "empresa construcción sostenible Marbella"
+- [ ] Implement keyword clusters: main services + locations + testimonials/reviews
+- [ ] Add high-quality pillar content pages connecting related services and locations
+- [ ] Create case studies/portfolio pages with before/after images and specific location targeting
+- [ ] Develop service-specific FAQ sections to capture featured snippets
+- [ ] Add strong call-to-actions (CTAs) connecting to contact forms and WhatsApp
+- [ ] Implement semantic HTML5 structure with proper heading hierarchy (H1-H6)
+
+## Local SEO Enhancements
+- [ ] Create Google Business Profile optimization with consistent NAP across all platforms
+- [ ] Add local landing pages for each area served: Costa del Sol, Málaga province cities
+- [ ] Implement local schema markup variations for different locations (geoCoordinates per city)
+- [ ] Add local keywords in metadata: "empresa de construcción Málaga", "reformas Marbella", "obra nueva Estepona"
+- [ ] Include local competition keywords in content strategy
+- [ ] Create location-specific contact info and content sections
+- [ ] Add local event/tutorial content about construction in Costa del Sol
+- [ ] Implement local backlink building strategy with regional business associations
+
+## Blog SEO Implementation
+- [ ] Create blog routing structure: app/blog/page.tsx (blog index), app/blog/[slug]/page.tsx (dynamic post pages)
+- [ ] Implement blog metadata with Article/BlogPost schema, author info, reading time
+- [ ] Add blog sitemap generation and integration
+- [ ] Create SEO-optimized blog content calendar focusing on construction trends, local tips, cost guides
+- [ ] Implement internal linking strategy within blog content to main service pages
+- [ ] Add related posts and category/tag semantic linking
+- [ ] Create long-form content for pillar topics (25+ services, materials guides)
+- [ ] Implement blog publishing workflow with proper metadata fields
+
+## Performance Optimizations
+- [ ] Optimize all images: convert to WebP/AVIF, add proper sizing, lazy loading
+- [ ] Implement Core Web Vitals improvements: LCP (hero image optimization), CLS (proper alt text), INP (reduce JavaScript)
+- [ ] Add preload/preconnect for critical resources (fonts, images, external scripts)
+- [ ] Implement CSS/JS minification and code splitting
+- [ ] Add caching headers and service worker optimizations
+- [ ] Reduce unused JavaScript: audit and remove unnecessary plugins/libraries
+- [ ] Optimize font loading: self-host fonts, proper subsetting
+- [ ] Implement critical CSS inlining for above-the-fold content
+- [ ] Add compression (gzip/brotli) configuration for all assets
+
+## Structure and Routing Fixes
+- [ ] Remove static HTML files (index*.html) and convert all content to Next.js App Router
+- [ ] Implement proper URL structure: /servicios/reformas-integrales, /construccion/obra-nueva
+- [ ] Add canonical URLs for all pages with proper alternates for multilanguage
+- [ ] Implement breadcrumb navigation with proper schema
+- [ ] Create service category pages grouping related offerings
+- [ ] Add portfolio/project detail pages with case study content
+- [ ] Implement contact forms with proper validation and SEO-optimized thank-you pages
+
+## Analytics and Monitoring
+- [ ] Implement Google Analytics 4 with enhanced ecommerce tracking
+- [ ] Add Google Search Console verification
+- [ ] Set up Bing Webmaster Tools
+- [ ] Install Google Tag Manager for advanced tracking
+- [ ] Add conversion tracking for contact forms and phone calls
+- [ ] Implement Core Web Vitals monitoring
+- [ ] Add schema validation and monitoring tools
+- [ ] Create SEO performance dashboards and reporting
+
+## Security and Accessibility
+- [ ] Implement HTTPS certificate configuration
+- [ ] Add security headers in next.config.js (Content Security Policy, XSS protection)
+- [ ] Fix accessibility issues: proper alt text for all images, ARIA labels, keyboard navigation
+- [ ] Implement proper heading hierarchy (single H1 per page)
+- [ ] Add focus management for interactive elements
+- [ ] Implement proper color contrast ratios
+- [ ] Add screen reader friendly content structure
+
+## Mobile and Technical SEO
+- [ ] Optimize for mobile-first indexing with proper responsive design
+- [ ] Implement AMP or mobile-optimized alternate pages if needed
+- [ ] Add proper touch targets and mobile navigation
+- [ ] Optimize loading speed for mobile devices
+- [ ] Implement progressive web app features
+- [ ] Add offline capability for contact information
+
+## Content Strategy Priorities
+- [ ] Create 50+ service-specific pages for long-tail keywords
+- [ ] Develop 100+ blog posts targeting semantic keywords related to construction
+- [ ] Build customer testimonial/review pages with schema markup
+- [ ] Create comparison content: "Steel Framing vs Traditional Construction"
+- [ ] Implement video content with proper schema (VideoObject)
+- [ ] Add downloadable resources: cost calculators, checklists, guides
+- [ ] Develop lead magnets attracting potential clients in Costa del Sol region

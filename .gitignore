@@ -1,0 +1,9 @@
+﻿# Ignorar archivos de sistema y dependencias
+node_modules/
+.env
+.env.local
+.DS_Store
+
+# Ignorar carpetas de Next.js que no se usan
+app/
+public/
